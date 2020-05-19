@@ -1,0 +1,37 @@
+.pic1 {
+    border-radius: 50%;
+    height: 1000px;
+    width: 1000px;
+    margin: 50px 0px 50px 50px;
+    padding: 0px;
+}
+  .box1 {
+    -webkit-border-radius: 17px;
+    -moz-border-radius: 17px;
+    border-radius: 17px;
+    -webkit-box-shadow: 0px 0px 16px #87CEEB;
+    -moz-box-shadow: 0px 0px 16px #87CEEB;
+    box-shadow: 0px 0px 16px #87CEEB;
+    background-color: #87CEEB;
+    padding: 10px;
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 12pt;
+    color: #888888;
+    text-align: center;
+    width: 3000px;
+    height: 3000px;
+    margin: auto;
+  }
+  li {
+      font-size: 70px;
+      text-align: left;
+      color:  navy;
+  }
+  h1{
+    font-size: 120px;
+  }
+body{
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+ 
