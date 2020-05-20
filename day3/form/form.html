@@ -4,29 +4,79 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
     <style>
-        .form{
-            display: flex;
-            justify-content: center;
+        .header h1, p{
+            text-align: center;
+            margin-top: 50px  
         }
+        body{
+            background-color:;
+            font-size: 20px;
+            color:white;
+            background-image: linear-gradient(
+      115deg,
+      rgba(58, 58, 158, 0.8),
+      rgba(136, 136, 206, 0.7)
+    ),
+    url(https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  font-family: 'Poppins', sans-serif;
+        }
+        .form {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            flex-direction: column;
+            background-color:#1F1F32;
+            margin-left: 300px;
+            margin-right: 300px;
+            border-radius: 5px;
+            padding-right: 40px;
+            padding-left: 40px;
+            padding-top: 40px;
+            }
         .item{
             display: flex;
             flex-direction: column;
-            justify-content: center;
-        }  
+        } 
+        .comment{
+            height: 200px ;
+        } 
+        
+            margin-top: 10px
+            border-radious; 50px
+        }
+        .navbar{
+            background-color: black;
+            height: 65px;
+        }
+        .question {
+            height: 200px;
+            width: 100px;
+            display: block;
 
+        }
     </style>
 </head>
 
 
 <body>
     <div class="header">
-        <h1>Free codecamp Survey form</h1>
+        <div class="navbar">
+            <div>   </div>
+        </div>
+        <h1>freeCodeCamp Survey Form</h1>
         <p>Thank you for taking the time to help us improve the platform
     </div>
     <div class="form">
-        <form action="">
-            <div class="item">
+        <form>
+            <div class="item name">
                 <label>Name</label>
                 <input type="text" placeholder="Enter your name">  
             </div>
@@ -53,10 +103,10 @@
                 </select>
             </div>
            
-            <div class="item">
+            <div class="radio">
                 <label>Would you recommend freeCodeCamp to a friend?</label><br>
-                <input type="radio"> Definitely<br>
-                <input type="radio"> Maybe<br>
+                <input type="radio"> Definitely <br>
+                <input type="radio"> Maybe <br>
                 <input type="radio"> Not sure
             </div>
             
@@ -83,6 +133,28 @@
                 </select>
             </div>
 
+            <div class="checkbox">
+                <label>What would you like to see improved? (Check all that apply)</label><br>
+                <input type="checkbox"> Front-end Projects <br>
+                <input type="checkbox"> Back-end Projects <br>
+                <input type="checkbox"> Data Visualization <br>
+                <input type="checkbox"> Challenges<br>
+                <input type="checkbox"> Open Source Community <br>
+                <input type="checkbox"> Gitter help rooms <br>
+                <input type="checkbox"> Videos <br>
+                <input type="checkbox"> City Meetups <br>
+                <input type="checkbox"> Wiki <br>
+                <input type="checkbox"> Forum <br>
+                <input type="checkbox"> Additional Courses
+            </div>
+            <div class="question">
+                <label>Any comments or suggestions?</label><br>
+                <input type="textarea" placeholder="Enter your comment here">  
+            </div>
+            
+            <div class="item">
+                <button type="button" class="btn btn-success">Submit</button>
+            </div>
 
 
 
