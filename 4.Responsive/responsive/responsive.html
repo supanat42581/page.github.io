@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: grid;
+            justify-content: center;
+        }
+        .pic{
+            display: grid;
+            justify-content: center;
+            width: 100%;
+        }
+        .content{
+            display: grid;
+            grid-template-columns: repeat(3, auto);
+            grid-row-gap: 2px;
+            justify-content: center;
+            align-items: center;
+            
+        }
+        .item {
+            display: grid;
+            background-color: blanchedalmond;
+            padding: 10px;
+            text-align: center;
+            width: 80%;
+        }
+        .footer{
+            text-align: center;
+        }
+        @media only screen and (max-width: 400px){ 
+	    .content {grid-template-columns: auto; }}
+        .item{
+                width: 100%;
+                font-size: 50px;
+            }
+        @media only screen and (max-width: 800px) and (min-width: 400px){ 
+        .content {grid-template-columns: repeat(2, auto); }}
+        .item{
+                width: 100%;
+                font-size: 30px;
+            }
+        @media only screen and (min-width: 800px){ 
+        .content {grid-template-columns: repeat(3, auto); }}
+        .item{
+                width: 100%;
+                font-size: 25px;
+            }
+    
+    </style>
+</head>
+
+
+
+<body>
+    <div class="container">
+        <div class="pic"><img src="555.jpg" alt=""></div>
+        
+        <div class="content">
+            <div class="item 1">
+                <div class="topic"> <h1>เรื่องน่ารู้ของประเทศไทย</h1></div>
+                <div class="detail"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, molestiae.</div>
+            </div>
+            <div class="item 2">
+                <div class="topic"> <h1>อาหารไทย</h1></div>
+                <div class="detail"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, molestiae.</div>
+            </div>
+            <div class="item 3">
+                <div class="topic"> <h1>วัฒนธรรมไทย</h1></div>
+                <div class="detail"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, molestiae.</div>
+            </div>
+            <div class="item 4">
+                <div class="topic"> <h1>สถานที่ท่องเที่ยว</h1></div>
+                <div class="detail"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, molestiae.</div>
+            </div>
+            <div class="item 5">
+                <div class="topic"> <h1>ภูมิศาสตร์</h1></div>
+                <div class="detail"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, molestiae.</div>
+            </div>
+            <div class="item 6">
+                <div class="topic"> <h1>รีวิวต่างๆ</h1></div>
+                <div class="detail"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, molestiae.</div>
+            </div>
+        </div>
+
+        <div class="footer"><h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, quaerat.<h5></div>
+
+
+
+
+
+
+
+
+
+    </div>
+</body>
+</html>
