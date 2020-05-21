@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+.box1{
+    animation-name: try;
+    height: 200px;
+    width: 300px;
+    animation-duration: 10s;
+    background-color: aqua;
+    margin-left: 200px;
+}
+@keyframes try {
+    0%{background-color: brown; position: relative; right: 50px;}
+    25%{background-color: green; relative; right: 100px; border-style: dotted; border-width: 20px;}
+    50%{background-color:navajowhite; relative; right: 150px;}
+    75%{background-color:purple; relative; right: 200px;}
+    100%{background-color:peru; relative; right: 250px;}
+
+}
+
+
+.box2{
+    animation-name: try2;
+    height: 200px;
+    width: 300px;
+    animation-duration: 10s;
+    background-color: aqua;
+    margin-left: 200px;
+}
+@keyframes try2 {
+    0%{background-color: brown; right: 50px;}
+    25%{background-color: green;  border-style: dotted; border-width: 20px;}
+    50%{background-color:navajowhite}
+    75%{background-color: purple}
+    100%{background-color:peru}
+
+}
+</style>
+
+
+</head>
+<body>
+    <div class="box1"></div>
+    <div class="box2"></div>
+</body>
+</html>
