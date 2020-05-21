@@ -12,14 +12,14 @@
         .pic{
             display: grid;
             justify-content: center;
-            width: 100%;
+            width: 5000px;
         }
         .content{
             display: grid;
             grid-template-columns: repeat(3, auto);
             grid-row-gap: 2px;
-            grid-column-gap: 0px;
             justify-content: center;
+            align-content: center ;
             
         }
         .item {
@@ -32,12 +32,15 @@
         .footer{
             text-align: center;
         }
-        @media only screen and (max-width: 400px;){ 
-	    .content {grid-template-columns: auto; }
-        @media only screen and (max-width: 800px;) and (min-width: 400px;){ 
-        .content {grid-template-columns: repeat(2, auto); }
-        @media only screen and (min-width: 800px;){ 
-        .content {grid-template-columns: repeat(3, auto); }
+        @media only screen and (max-width: 400px){ 
+	    .content {grid-template-columns: auto; }}
+
+        @media only screen and (max-width: 800px) and (min-width: 400px){ 
+        .content {grid-template-columns: repeat(2, auto); }}
+        
+        @media only screen and (min-width: 800px){ 
+        .content {grid-template-columns: repeat(3, auto); }}
+    
     </style>
 </head>
 
@@ -45,7 +48,7 @@
 
 <body>
     <div class="container">
-        <div class="pic"><img src="555.jpg" alt="" sizes="80%"></div>
+        <div class="pic"><img src="555.jpg" alt="" sizes="width=100%"></div>
         
         <div class="content">
             <div class="item 1">
