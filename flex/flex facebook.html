@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    
+    <title>Document</title>
+<style>
+    * {
+        margin: 0px;
+        padding:0px;
+    }
+    .containerwrap{
+        width: 100%;
+        height: 42px;
+        background-color: #3b5998;
+        display: flex;
+        flex-direction: row;
+        justify-content: center; 
+    
+    }
+    .container{
+        width: 80%;
+        display: flex;
+        
+    }
+    .left{
+        display: flex;
+        width: 100%;
+        align-items: center;
+    }
+    .ficon{
+        font-size: 28px;
+        color: white;
+    }
+    .searchbox{
+        width: 400px;
+        margin-left: 5px;
+        height: 25px;
+        border-style: none;
+        border-top-left-radius: 2px;
+        border-bottom-left-radius: 2px;
+    }
+    .sicon{
+        background-color: #f5f6f8;
+        width: 45px;
+        height: 25px;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-top-right-radius: 2px;
+        border-bottom-right-radius: 2px;
+    }
+    .right{
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+       
+    }
+    .pic{
+        display: flex;
+        border-radius: 50%;
+        width: 22px;
+        height: 22px;
+        align-items: center;   
+    }
+    .me{
+        display: flex;
+        flex-direction: row;
+        width: 30px;
+    }
+    
+    .right1{
+        display: flex;
+        flex-direction: row;
+        color: white;
+        align-items: center;
+        width: 200px;
+        justify-content: space-between;
+        margin-left: 30px;
+        
+    }
+    .right2{
+        display: flex;
+        flex-direction: row;
+       
+        width: 150px;
+        
+    }
+    .right3{
+        display: flex;
+        flex-direction: row;
+        width: 80px;
+        justify-content: space-between;
+        
+    }
+    .home{
+        margin-left: 50px;
+    }
+    .noti {
+        font-size: 20px;
+        margin-left: 20px;
+    }
+    .question, .drop{
+        font-size: 20px;
+        width: 30px; 
+    }
+</style>
+
+</head>
+<body>
+    <div class="containerwrap">
+        <div class="container">
+            <div class="left">
+                <div class="ficon"><i class="fab fa-facebook-square"></i></div>
+                <input class="searchbox" type="text" placeholder="ค้นหา"></input>
+                <div class="sicon"><i class="fas fa-search"></i></div>
+            </div>
+            <div class="right">
+                <div class="right1">
+                    <div class="me">
+                        <div><img class="pic" src="https://scontent.fbkk2-4.fna.fbcdn.net/v/t1.0-9/13508867_1319548004752962_6557985232096448956_n.jpg?_nc_cat=101&_nc_sid=85a577&_nc_eui2=AeHLx7MgHsrjMXK4aT1T7zSztnzBqyF9Gl-2fMGrIX0aX978_6-dlJE9u9HDC9YoJ-cSkuk5o1-W9FCp881qqgjt&_nc_ohc=dTLRWWvINzQAX87d68J&_nc_ht=scontent.fbkk2-4.fna&oh=ca9e31fbf58e9b9a8f08f4bce5804a9f&oe=5EF27C7E" alt=""></div>
+                        <div>Supanat</div>
+                    </div>
+                    <div class="home">หน้าหลัก</div>
+                    <div class="build">สร้าง</div>
+                </div>    
+                <div class="right2">
+                    <div class=noti><i class="fas fa-user-friends"></i></div>
+                    <div class=noti><i class="fab fa-facebook-messenger"></i></div>
+                    <div class=noti><i class="fas fa-bell"></i></div>
+                </div>
+                <div class="right3">
+                    <div class=question><i class="fas fa-question-circle"></i></div>
+                    <div class=drop><i class="fas fa-caret-down"></i></div>
+                </div>
+
+            </div>
+        </div>
+
+
+
+    </div>
+</body>
+</html>
