@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" 
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <style>
+        *{
+            margin: 0px;
+        }
+        .container{
+            display: grid;
+            grid-template-rows: 60px 563px 300px;
+           
+           
+        }
+        .header{
+            height: 20px;
+            display: flex;
+            justify-content: space-between;
+        }
+        .headerleft{
+            background: linear-gradient(135deg,#3d3d63,#3d3d63 10%,#af63b8 96%,#af63b8);
+            height: 60px;
+            width: 200px;
+        }
+        .headerright{
+            display: flex;
+            justify-content: space-between;
+            width: 40%;
+            height: 60px;
+            align-items: center;
+        }
+        .content1{
+            background-image: url(https://spigotdesign.com/wp-content/themes/spigot/dist/svg/spigot-icon-mini.svg);
+            background-color: #242433;
+            height: 563px;
+            width: 100%;
+            display: grid;
+            align-items: center;
+            justify-content: center;
+        }
+        .picicon{
+            display: grid;
+            align-items: center;
+            justify-content: center;
+            
+        }
+        .text{
+            display: grid;
+            align-items: center;
+            justify-content: center;
+            font-size: 60px;
+            color: white;
+            text-align: center;
+        }
+        .row1{
+            display: flex;
+            height: 700px;
+            background-color: tomato;
+        }
+        .b1{
+            display: grid;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header"  >
+            <div class="headerleft">
+                <a class="app-header__branding-link" href="https://spigotdesign.com" title="Spigot Design"> <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 127 40.05"><defs><style>.cls-1,.cls-2{fill:#fff}.cls-1{fill-rule:evenodd}</style></defs><path class="cls-1" d="M13.62,8.69h0a2.71,2.71,0,0,0-2.65,2.71,17.58,17.58,0,0,0,1.17,5.09l-.08,0a17.6,17.6,0,0,0-5-1.14H7A2.7,2.7,0,0,0,4.29,18v.05A2.71,2.71,0,0,0,7,20.73H7a17.54,17.54,0,0,0,5.05-1.17v0h0l-.07.1a16.12,16.12,0,0,0-3.19,9.65H16.9v-.13a8.1,8.1,0,0,1,8.1-8h.09a8,8,0,0,1,5.65,2.39l5.74-5.71-.09-.08A16.13,16.13,0,0,0,25,13.15h-.13a16.12,16.12,0,0,0-9.71,3.34h0l0-.08a17.6,17.6,0,0,0,1.14-5v-.05A2.72,2.72,0,0,0,13.62,8.69ZM20,0a20,20,0,0,1,20,20v.33a20,20,0,0,1-20,19.7h-.33A20,20,0,0,1,0,20v-.33A20,20,0,0,1,20,0Z"></path><path class="cls-2" d="M69.79,13A6.53,6.53,0,0,0,65,15.13V13.25H61v1.53h2.37V32H61v1.54h6.62V32H65V25.82a7.41,7.41,0,0,0,4.53,1.62,6.66,6.66,0,0,0,5-2.12,7.48,7.48,0,0,0,1.9-5.12C76.44,16,73.64,13,69.79,13Zm5,7.18c0,3.31-2.2,5.71-5.15,5.71A6.6,6.6,0,0,1,65,24.09V16.91a6.08,6.08,0,0,1,4.7-2.36C72.68,14.55,74.75,16.87,74.75,20.2Z"></path><polygon class="cls-2" points="82.52 13.35 78.35 13.35 78.35 14.89 80.86 14.89 80.86 25.83 78.35 25.83 78.35 27.36 85.03 27.36 85.03 25.83 82.52 25.83 82.52 13.35"></polygon><path class="cls-2" d="M81.42,10.08A1.45,1.45,0,1,0,80,8.64,1.42,1.42,0,0,0,81.42,10.08Z"></path><path class="cls-2" d="M110.09,13A7,7,0,0,0,103,20.19a7.09,7.09,0,1,0,14.17,0A6.9,6.9,0,0,0,110.09,13Zm5.35,7.17c0,3.33-2.2,5.65-5.35,5.65a5.33,5.33,0,0,1-5.34-5.65,5.35,5.35,0,1,1,10.69,0Z"></path><path class="cls-2" d="M98.44,14.75A7.11,7.11,0,0,0,93.87,13a6.91,6.91,0,0,0-6.93,7.2,6.68,6.68,0,0,0,11.47,5v2.31a5.63,5.63,0,0,1-.85,3.23,4.7,4.7,0,0,1-3.79,1.44,5.66,5.66,0,0,1-3-.71l-.15-.11-1.12,1.13.22.16a7,7,0,0,0,4,1.07,6.47,6.47,0,0,0,5.16-2,7.07,7.07,0,0,0,1.25-4.34V14.78h2.32V13.25H98.44Zm-4.6-.19a6.55,6.55,0,0,1,4.57,1.88v7a6.2,6.2,0,0,1-4.73,2.39c-2.93,0-5.05-2.35-5.05-5.6A5.31,5.31,0,0,1,93.84,14.56Z"></path><path class="cls-2" d="M55.42,19.38c-2.32-.6-3.75-1-3.75-2.36S53.06,14.7,55,14.7a8.49,8.49,0,0,1,.88.05,4.08,4.08,0,0,1,1,.2,2.92,2.92,0,0,1,.87.41,4.16,4.16,0,0,1,1,.88l.17.2,1-1-.09-.15a2.9,2.9,0,0,0-.51-.67A5.86,5.86,0,0,0,55,13.2c-2.83,0-5,1.66-5,3.85,0,2.73,2.77,3.4,5,3.94,2.09.51,3.68,1,3.68,2.61s-1.45,2.45-3.7,2.45h-.31l-.43,0h0a5.09,5.09,0,0,1-2-.58l-.14-.08h0a5.27,5.27,0,0,1-1.2-.94l-.16-.18-1,1,.11.16a2.92,2.92,0,0,0,.37.43,7,7,0,0,0,4.81,1.69c3.11,0,5.29-1.64,5.29-4C60.37,20.63,57.51,19.91,55.42,19.38Z"></path><path class="cls-2" d="M125.92,25.43l-.14.08a3.77,3.77,0,0,1-1.74.43h0c-.82,0-1.28-.26-1.52-.78a2.65,2.65,0,0,1-.21-1.18v-9.2h4.36V13.24h-4.36V9.18l-1.66,0v4h-2.47v1.54h2.47v9.33a4.28,4.28,0,0,0,.34,1.8,2.8,2.8,0,0,0,2.78,1.64,6.41,6.41,0,0,0,3-.88l.26-.15Z"></path></svg> </a>
+            </div>
+            <div class="headerright">
+                <div>PORTFOLIO</div>
+                <div>BLOG</div>
+                <div>ABOUT</div>
+                <div>CONTACT</div>
+                <div>ค้นหา</div>
+            </div>
+        </div>
+        <div class="content1">
+            <div class="picicon">
+                <img src="https://spigotdesign.com/wp-content/uploads//2020/03/spigot-icon-ds.svg
+                " alt="">
+            </div>
+            <div class="text">
+                <p>Park City's Web Design & Digital</p> 
+                <p>Marketing Professionals</p>
+            </div>
+        </div>
+        <div class="row1">  
+            <div class="b1 col-md-3 item" style="background-color:#EEEEF3;">
+                <H1>Spigot Powers Small Businesses and Organizations</H1>
+                <p>We're a team of Utah web design and marketing professionals who know what it takes to create and maintain a site that ranks.</p>
+                <p>Propelled by in-depth SEO research and a targeted site strategy, our web designers and developers build clean and responsive custom WordPress websites that drive traffic and keep audiences engaged.</p>
+                <p>That all sounds a little dry, we know. But it's really a lot of fun... we promise.</p>
+            </div>
+            <div class=" col-md-3 item" style="background-color:lavenderblush;">.col-sm-3</div>
+            <div class=" col-md-3 item" style="background-color:lavender;">.col-sm-3</div>
+            <div class=" col-md-3 item" style="background-color:lavenderblush;">.col-sm-3</div>
+        </div>
+
+        
+        
+
+
+
+    </div>
+</body>
+</html>
