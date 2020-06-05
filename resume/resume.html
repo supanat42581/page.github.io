@@ -15,24 +15,25 @@
         }
         .container{
             width: 98vw;
-            height: 100vh;
+            height: 100%;
             background-color: beige
         }
         .header{
             display: grid;
-            grid-template-columns: 400px 500px;
+            grid-template-columns: 400px 1fr;
             column-gap: 10px;
             align-items: center;
         }
       
         .personal{
-            grid-column: 2/4;
             background-color: coral;
             border-radius: 5px;
+            margin-top: 10px;
+            padding: 10px;
         }
         .content{
             display: grid;
-            grid-template-columns: 400px 500px;
+            grid-template-columns: 1fr 1fr;
             width: 100%;
             column-gap: 10px;
             margin-top: 10px;
@@ -41,18 +42,18 @@
             grid-column: 1/2;
             height: 100vh;
             display: grid;
-            grid-template-rows: 160px 160px 160px;
+            grid-template-rows: 1fr 1fr 1fr;
             row-gap: 5px;
+            width: 100%;
  
         }
         .contact{
             display: grid;
-            grid-row: 1/2;
             background-color: #38DAE6;
             grid-template-rows: repeat(3, auto);
             gap: 5px;
             align-items: center;
-            width: 400px;
+            width: 100%;
             border-radius: 10px;
             justify-content: center;
         }
@@ -62,39 +63,42 @@
             border-radius: 5px;
         }
         .skill{
-            grid-row: 2/3;
             align-items: center;
             display: grid;
             background-color: #38DAE6;
             border-radius: 10px;
+            width: 100%;
         }
         .software{
-            grid-row: 3/4;
             align-items: center;
             display: grid;
             background-color: #38DAE6;
             border-style: solid, black, 2px;
             border-radius: 10px;
+            width: 100%;
         }
         .right{
-            grid-column: 2/4;
+            
             height: 100vh;
             display: grid;
-            grid-template-rows: 100px 150px 250px;
-            width: 860px;
+            grid-template-rows: 1fr 1fr 1fr;
+            width: 100%;
         }
         .careerobjective{
             grid-row: 1/2;
+            width: 100%;
         }
         .education{
             grid-row: 2/3;
             display: grid;
             align-items: center;
+            width: 100%;
         }
         .workexp{
             grid-row: 3/4;
             display: grid;
             align-items: center;
+            width: 100%;
         }
         .head{
             font-size: 30px;
@@ -103,7 +107,6 @@
             border-radius: 10px;
             width: 95%;
             text-align: center;
-            justify-self: center;
             margin: auto;
         }
         .infor{
@@ -130,8 +133,8 @@
             align-items: center;
         }
         .image{
-            width: 150px; 
-            height: 150px; 
+            width: 50%; 
+            height: 50%; 
             border-radius: 50%;
             display: block;
         }
@@ -139,6 +142,20 @@
             display: flex;
             align-items: center;
             justify-content: center;
+        }
+        @media only screen and (max-width: 648px){ 
+	    .header {grid-template-columns: 100%;}
+        .content{grid-template-columns: 100%;}
+        }
+
+        @media only screen and (max-width: 800px) and (min-width: 649px){ 
+        .header {grid-template-columns: 100%; }
+        .content{font-size: 16px;}
+        .head{font-size: 20px;}
+
+        }
+    
+        @media only screen and (min-width: 800px){ 
         }
     </style>
 </head>
@@ -218,27 +235,26 @@
                     <div class="infor">
                         <span><i class="fas fa-play"></i>  2016 - Present 
                         Study at the faculty of education chulalongkorn 
-                        university  Junior Major Bussiness Education <br> 
-                        &nbsp &nbsp GPAX 3.52</span>
+                        university Junior Major Bussiness EducationGPAX 3.52</span>
                     </div>
                 </div>
                 <div class="workexp">
                     <div class="head">Workexperience</div>
                     <div class="subwork">
                         <div class="infor">
-                            <span><i class="fas fa-play"></i> &nbspStaff Chulalongkorn University Expo 2017 "100 Years Innovation for social responsibility" <br>
-                                &nbsp &nbsp &nbspcoordinating between presenters and scheduling support.
+                            <span><i class="fas fa-play"></i> &nbspStaff Chulalongkorn University Expo 2017 "100 Years Innovation for social responsibility"
+                                 coordinating between presenters and scheduling support.
                             </span>
                         </div>
                         <br>
                         <div class="infor">
-                            <span><i class="fas fa-play"></i> &nbspStaff Chula-Chonburi 39 times. T-Cas guide student how to enter to university.</span>
+                            <span><i class="fas fa-play"></i> &nbsp Staff Chula-Chonburi 39 times. T-Cas guide student how to enter to university.</span>
                             </span>
                         </div>
                         <br>
                         <div class="infor">
-                            <span><i class="fas fa-play"></i> &nbspFinance Department Internship, Faculty of Education, Chulalongkorn University.
-                                <br> &nbsp &nbsp &nbspSave the financial data and store it in the system.
+                            <span><i class="fas fa-play"></i> &nbsp Finance Department Internship, Faculty of Education, Chulalongkorn University.
+                             Save the financial data and store it in the system.
                             </span>
                         </div>
                         <br>
