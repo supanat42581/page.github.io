@@ -5,7 +5,64 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="https://kit.fontawesome.com/e20b5b088a.js" crossorigin="anonymous"></script>
+    <script>
+        
+        function nightmode() {
+            document.getElementsByClassName("container")[0].style.backgroundColor="black";
+            document.getElementsByClassName("name")[0].style.color="white";
+            document.getElementsByClassName("detail")[0].style.color="white";
+            document.getElementsByClassName("contact")[0].style.backgroundColor="#287285";
+            document.getElementsByClassName("skill")[0].style.backgroundColor="#287285";
+            document.getElementsByClassName("software")[0].style.backgroundColor="#287285";
+            document.getElementsByClassName("button")[0].style.display="none"; 
+            document.getElementsByClassName("button2")[0].style.display="block";  
+            document.getElementsByClassName("personal")[0].style.backgroundColor="rgba(87, 73, 70 ,0.5)";
+            document.getElementsByClassName("careerobjective")[0].style.backgroundColor="rgba(247, 244, 244 ,0.5)";
+            document.getElementsByClassName("education")[0].style.backgroundColor="rgba(247, 244, 244 ,0.5)";
+            document.getElementsByClassName("workexp")[0].style.backgroundColor="rgba(247, 244, 244 ,0.5)";
+            document.getElementsByClassName("subhead")[0].style.color="white";
+            document.getElementsByClassName("subwork")[0].style.color="white";
+            document.getElementsByClassName("software")[0].style.color="white";
+            document.getElementsByClassName("skill")[0].style.color="white";
+            document.getElementsByClassName("infor")[0].style.color="white";
+
+            
+        }
+        function daymode() {
+            document.getElementsByClassName("container")[0].style.backgroundColor="beige";
+            document.getElementsByClassName("contact")[0].style.backgroundColor="#38DAE6";
+            document.getElementsByClassName("skill")[0].style.backgroundColor="#38DAE6";
+            document.getElementsByClassName("software")[0].style.backgroundColor="#38DAE6";
+            document.getElementsByClassName("button")[0].style.display="block"; 
+            document.getElementsByClassName("button2")[0].style.display="none";
+            document.getElementsByClassName("name")[0].style.color="black";
+            document.getElementsByClassName("detail")[0].style.color="black"; 
+            document.getElementsByClassName("personal")[0].style.backgroundColor="coral";
+            document.getElementsByClassName("subhead")[0].style.color="black";
+            document.getElementsByClassName("subwork")[0].style.color="black";
+        }
+    </script>
+    
+    
+    
     <style>
+        .exp{
+            display: flex;
+            justify-content: space-around;
+        }
+        .button{
+            width: 100%;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+        }
+        .button2{
+            width: 100%;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            display: none;
+        }
         *{
             margin: 0px;
             margin-left: 1px;
@@ -30,6 +87,7 @@
             border-radius: 5px;
             margin-top: 10px;
             padding: 10px;
+            color: black;
         }
         .content{
             display: grid;
@@ -147,6 +205,7 @@
 	    .header {grid-template-columns: 100%;}
         .content{grid-template-columns: 100%;
                  font-size: 20px;
+
         }
         
         }
@@ -155,7 +214,6 @@
         .header {grid-template-columns: 100%; }
         .content{font-size: 16px;}
         .head{font-size: 20px;}
-
         }
     
         @media only screen and (min-width: 800px){ 
@@ -232,14 +290,14 @@
                     <div class="head">Education</div>
                     <div class="infor">
                         <span><i class="fas fa-play"></i> 2010 - 2016 Study at Debsirin School 
-                            in Arts-Math program GPAX 3.87</span>
-                        </div>
-                    
-                    <div class="infor">
-                        <span><i class="fas fa-play"></i>  2016 - Present 
-                        Study at the faculty of education chulalongkorn 
+                            in Arts-Math program GPAX 3.87
+                        </span>
+                        
+                        <span><i class="fas fa-play"></i>  2016 - PresentStudy at the faculty of education chulalongkorn 
                         university Junior Major Bussiness EducationGPAX 3.52</span>
                     </div>
+                    
+                    
                 </div>
                 <div class="workexp">
                     <div class="head">Workexperience</div>
@@ -260,18 +318,34 @@
                              Save the financial data and store it in the system.
                             </span>
                         </div>
-                        <br>
+                       
                         <div class="infor">  
                             <span><i class="fas fa-play"></i>&nbsp Won GSB-Startup-Innovation for Enterperner.
                             </span>
+                        </div>
+                        <span class="exp">
+                            <button onclick="addexp()">
+                                Get more Experience
+                            </button>
+                            <button onclick="deleteexp()">
+                                Delete Experience
+                            </button>
+                        </span>
                     </div>
                 </div>
             </div>
         </div>
- 
-        
-
-
-    </div>
+    <br>
+        <div class="button">
+            <button onclick="nightmode()">
+                Dark Mode!!!
+            </button>
+        </div>
+        <div class="button2">
+            <button onclick="daymode()">
+                Normal!!!
+            </button>
+        </div>   
+        </div>
 </body>
 </html>
